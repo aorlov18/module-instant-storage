@@ -1,11 +1,11 @@
+# .pre-commit-config.yaml
+default_stages: [commit]
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
-    hooks:
-    -   id: check-yaml
-    -   id: end-of-file-fixer
-    -   id: trailing-whitespace
--   repo: https://github.com/psf/black
-    rev: 22.10.0
-    hooks:
-    -   id: black
+    - repo: https://github.com/antonbabenko/pre-commit-terraform
+      rev: v1.77.1
+      hooks:
+          - id: terraform_fmt
+          - id: terraform_validate
+          - id: terraform_tflint
+          - id: terraform_docs_replace
+    
