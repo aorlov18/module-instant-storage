@@ -8,4 +8,7 @@ repos:
           - id: terraform_validate
           - id: terraform_tflint
           - id: terraform_docs
-    
+  
+          - id: terraform_docs
+      args:
+          - --args=--config=.terraform-docs.yml
