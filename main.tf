@@ -5,7 +5,7 @@ terraform {
       version = "0.86.0"
     }
   }
-  # storage backend
+  # storage backend S3
   backend "s3" {
     endpoint                    = "storage.yandexcloud.net"
     bucket                      = "ttf-state-bucket"
